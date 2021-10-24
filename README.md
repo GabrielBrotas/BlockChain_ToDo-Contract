@@ -41,8 +41,7 @@ Create smart contracts
 Browser extension for google chrome, etherium blockchain is a network so we need a browser extension in order to connect with dat network,
 
 Metamask will allow us to connect with blockchain with our personal account and interect with the smart contracts
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1d22045f-90b7-42fb-a633-ed4652bdabf7/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577103-1b522e87-4928-4092-853e-ff8e81228dfa.png)
 
 ## Project —
 
@@ -72,8 +71,7 @@ Metamask will allow us to connect with blockchain with our personal account and 
 
 }
 ```
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b3d40555-0bec-4e52-b05c-c746c10b3732/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577114-42f84989-a388-4232-a40e-9a56091d8190.png)
 
 the contracts folder is where we will have our contracts
 
@@ -94,13 +92,11 @@ contract TodoList {
 
 compile this code 
 
->truffle complie
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/19f07e44-92c4-477f-b4ba-f4c22306b4a5/Untitled.png)
+>truffle compile
+![image](https://user-images.githubusercontent.com/63565773/138577119-80aaaca4-983f-4281-a411-94d1b51f233b.png)
 
 this will create a json representation of our contract in build/contracts
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/a792b449-ea98-4802-9eac-78bd8355ab10/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577126-6ca4d147-07f4-46ba-ad1b-0eb9a1bcfa1d.png)
 
 **truffle-config.js**
 
@@ -140,11 +136,12 @@ module.exports = function (deployer) {
 
 >truffle migrate
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/209ee37c-3168-4640-91d3-d26bcfe3e8d2/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577141-ad376857-2d66-4402-a3bb-c71768212556.png)
+
 
 We can see that each contract and migration cost something to deploy
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3d0d0e7b-14a8-49a9-86f1-b8f0c11c13b4/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577145-c85272e9-c78d-4056-806a-9ec38d4356b0.png)
 
 In the first account the balence went down a little bit. this account paid the gas to deploy the smart contract.
 
@@ -154,15 +151,14 @@ In the first account the balence went down a little bit. this account paid the g
 
 >todoList = await TodoList.deployed()
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b983a7c1-df44-4fe8-baa4-000547a21943/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577153-ecf470c5-255b-4a2e-8f10-47b6136bfa84.png)
 
 Here we are assign the todoList to the migration TodoList that we deployed in the migration
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3831358f-ff9d-4e4d-b74a-9ce220269db0/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577159-f17fc3c2-4397-4f7a-bfc9-b4797a1202c9.png)
 
 And now we have access to some informations about this contract
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/17e27588-563c-49df-9928-e070e8c6bbdb/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577162-eb3329a8-e321-4c50-b440-0a092c15a506.png)
 
 ### Data Types, Functions and Constructor
 
@@ -204,12 +200,11 @@ contract TodoList {
 
 >truffle migrate —reset // deploy a new copy and override the other
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3e96acf0-1b80-4b14-a3b7-a5a697dcfa37/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577167-03f8972a-393c-483c-987b-fc780ed1aa2c.png)
 
 we can see that the id is a BN (Big Number0 with the value 1, content and completed is in there as well.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3f6269ea-2eda-48ca-b5f0-c73f7568d1ca/Untitled.png)
-
+![image](https://user-images.githubusercontent.com/63565773/138577172-561c4c77-f4ee-4cb2-ae13-49c2588cb5ca.png)
 ## Testing
 
 test/TodoList.test.js
@@ -235,5 +230,4 @@ contract('TodoList', (accounts) => {
 ```
 
 >truffle test
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/77ce02f6-a14a-480d-abe6-da7bfe5f124a/Untitled.png)
+![image](https://user-images.githubusercontent.com/63565773/138577179-d486c933-7762-4d5b-821b-1ea8beb1b6b5.png)
